@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>vjslfbvalkbfvlajbfvjabdlfkvba;fjv;ajkfv;kajbfvk;jabdfkjvbakjfbv;
+            ahviurhgauehrg;aue;ga;kjfbvkajbvjbvkajfbvk
+            jafbv;abfvbafkjvba;kfjbvkabfvkabfvbakfhgaehrharughaouhg;afbvkja
+            bfvkjbdf;jvba;kfjbvjakbfvajdfbvauheroguheo
+            ighroahiegoajbdfvkjabdfvjkadbfv;adfibhaoehrgoa;ehrafdbn</p>
+        <button class="btn btn-warning">На страницу about</button>
+        {% for el in values %}
+            {% if el == 'text1' %}
+                {% filter upper %}
+                    <p>{{ el }}</p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+        {{ obj.a }}
+        {{ obj.c|upper }}
+    </div>
+{% endblock %}
