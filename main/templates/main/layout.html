@@ -16,11 +16,11 @@
         <span class="logo">itProger</span>
         <h3>Навигация</h3>
         <ul>
-            <a href="{% url 'home' %}"><li><i class="bi bi-house"></i>Главная</li></a>
-            <a href="{% url 'about' %}"><li><i class="bi bi-person"></i>About</li></a>
-            <a href="{% url 'info' %}"><li><i class="bi bi-journal"></i>Info</li></a>
-            <a href="{% url 'news_home' %}"><li><i class="bi bi-megaphone"></i>News</li></a>
-            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="bi bi-plus-circle"></i>Add news</button></li></a>
+            <a href="{% url 'main:home' %}"><li><i class="bi bi-house"></i>Главная</li></a>
+            <a href="{% url 'main:about' %}"><li><i class="bi bi-person"></i>About</li></a>
+            <a href="{% url 'main:info' %}"><li><i class="bi bi-journal"></i>Info</li></a>
+            <a href="{% url 'news:home' %}"><li><i class="bi bi-megaphone"></i>News</li></a>
+            <a href="{% url 'news:create' %}"><li><button class="btn btn-info"><i class="bi bi-plus-circle"></i>Add news</button></li></a>
         </ul>
     </aside>
     <main>
